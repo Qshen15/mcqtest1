@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DCDCDC">
+
+    <include layout="@layout/peisongrenwu_title"/>
+
+    <LinearLayout
+        android:id="@+id/neirong"
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/mission"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="17dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/TaskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调配人员："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/TaskName"
+                android:text="吴先生"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="工      号："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起始区域："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskSArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="第二区"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起始停车点："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskSSpot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1865民生办公楼"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="调配车辆："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskCar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="苏AD67207"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目标区域："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskEArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="李先生"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="目标停车点："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskESpot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="17861826312"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="规定完成时间："
+                android:textColor="#919191"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/getTaskTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020年9月15日 10:20"
+                android:textColor="#000000"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="327dp"
+        android:layout_height="327dp"
+        android:layout_below="@+id/neirong"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/mission"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:padding="17dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="车辆照片："
+            android:textColor="#919191"
+            android:textSize="17sp" />
+        <ImageView
+            android:id="@+id/Carimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/car"
+            android:scaleType="centerInside"
+            android:background="@drawable/mission"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/bbc"
+        android:background="@drawable/qiandaochu"/>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextAppearance="@style/text_item"
+            app:expandedTitleTextAppearance="@style/textView_sp12_white"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="84dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />  <!--pin 和上面组合互动-->
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bbc"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white"
+                android:layout_marginTop="20dp"
+                android:onClick="checkin">
+
+                <TextView
+                    android:id="@+id/tvb1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="              Step1： 获得我的位置"
+                    android:textColor="@color/text_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/youadr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvb1"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/text_black"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/a_one"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"  android:layout_marginTop="20dp"
+                android:layout_height="70dp"    android:onClick="checkin2"
+                android:background="@color/white">
+                <TextView
+                    android:layout_height="wrap_content"  android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/text_black"  android:text="               Step2： 现场照片"
+                    android:textSize="16sp"  android:gravity="center"
+                    android:layout_width="wrap_content" android:id="@+id/tvb2"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_height="wrap_content"  android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp" android:layout_below="@+id/tvb2"
+                    android:textColor="#000000"  android:text=""
+                    android:textSize="12sp"  android:gravity="center"
+                    android:layout_width="wrap_content" android:id="@+id/youpic"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/a_two"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"  android:layout_marginTop="20dp"
+                android:layout_height="70dp"  android:layout_marginBottom="20dp"
+                android:onClick="checkin3"   android:background="@color/white"
+                >
+
+                <TextView
+                    android:layout_height="wrap_content"  android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="@color/text_black"  android:text="              Step3： 备注"
+                    android:textSize="16sp"  android:gravity="center"
+                    android:layout_width="wrap_content" android:id="@+id/tvb3"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_height="wrap_content"  android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp" android:layout_below="@+id/tvb3"
+                    android:textColor="#000000"  android:text=""
+                    android:textSize="12sp"  android:gravity="center"
+                    android:layout_width="wrap_content" android:id="@+id/youtip"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/youtip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/a_three"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"  android:layout_marginTop="20dp"
+                android:layout_height="50dp" android:layout_weight="1"
+                android:background="@color/white">
+                <TextView
+                    android:layout_height="50dp"  android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                    android:textColor="#FFFFFF"  android:text="提交"
+                    android:textSize="22sp"  android:gravity="center"
+                    android:layout_width="match_parent" android:background="@drawable/bg_btn4"
+                    android:layout_centerVertical="true" android:id="@+id/tosign"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

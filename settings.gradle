@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "access-services-with-oauth-2"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/fanhui_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/fanhui"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:text="工作任务"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:singleLine="true" />
+
+
+
+</RelativeLayout>

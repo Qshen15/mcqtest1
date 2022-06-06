@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/PersonSign">
+        <item android:id="@+id/getPerSign"
+            android:icon="@drawable/qiandao"
+            android:title="签到" />
+    </group>
+    <group android:id="@+id/ache">
+        <item android:id="@+id/getAche"
+            android:icon="@drawable/qingjia"
+            android:title="请假" />
+    </group>
+    <group android:id="@+id/rank">
+        <item android:id="@+id/getRank"
+            android:icon="@drawable/paihangbang"
+            android:title="排行榜"/>
+    </group>
+    <group android:id="@+id/xinlv">
+        <item android:id="@+id/getXinlv"
+            android:icon="@drawable/xinlv"
+            android:title="心率监测"/>
+    </group>
+    <group android:id="@+id/BBS">
+        <item android:id="@+id/getF"
+            android:icon="@drawable/luntan"
+            android:title="员工论坛"/>
+    </group>
+     <group android:id="@+id/feedback">
+         <item android:id="@+id/getFeedback"
+             android:icon="@drawable/fankui"
+             android:title="意见反馈" />
+     </group>
+    <group android:id="@+id/task">
+        <item android:id="@+id/getTask"
+            android:icon="@drawable/peisongrenwu"
+            android:title="工作任务"/>
+    </group>
+    <group android:id="@+id/postTrouble">
+        <item android:id="@+id/getT"
+            android:icon="@drawable/shijianshangbao"
+            android:title="事件上报"/>
+    </group>
+</menu>

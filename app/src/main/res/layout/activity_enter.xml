@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="40dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="欢迎来到“易琦畅修”"
+        android:textSize="34sp"
+        android:typeface="monospace"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginTop="107dp"
+        android:layout_marginLeft="20dp"
+        >
+
+    </TextView>
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="280dp"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/getUserName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/denglu_bg"
+            android:drawableLeft="@mipmap/uesr"
+            android:drawablePadding="5dp"
+            android:hint="姓  名"
+            android:letterSpacing="0.5"
+            android:textColorHint="	#696969"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/getPassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/denglu_bg"
+            android:hint="密  码"
+            android:textColorHint="	#696969"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:drawableLeft="@mipmap/password"
+            android:drawablePadding="5dp"
+            android:maxLines="1"
+            android:letterSpacing="0.5"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/duanxin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:background="#ffffff"
+            android:text="短信登录"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/wangji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="253dp"
+            android:layout_marginTop="-18dp"
+            android:background="#ffffff"
+            android:text="忘记密码？"
+            android:textSize="12sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/getInfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp">
+
+        <Button
+        android:layout_marginTop="420dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="立即登录"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@drawable/bg_btn4" />
+
+        <TextView
+            android:id="@+id/startReg"
+            android:layout_width="116dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-190dp"
+            android:layout_marginTop="470dp"
+            android:background="#ffffff"
+            android:text="立即注册"
+            android:textColor="@color/lanse"
+            android:textSize="17sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/getInfor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:text="@string/getSchool"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#B0C4DE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</RelativeLayout>

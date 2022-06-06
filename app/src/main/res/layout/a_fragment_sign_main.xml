@@ -1,0 +1,14 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/dl_main_drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+
+    <!-- 你的内容布局-->
+    <include layout="@layout/a_fragment_sign_item"/>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

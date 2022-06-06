@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">易琦畅修</string>
+    <string name="openString">开启</string>
+    <string name="closeString">关闭</string>
+    <string name="getSchool">"@"聊城大学3S大学生实验室</string>
+    <string name="text_begin">请开始说话&#8230;</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="yijian_tixing">请输入您的意见：</string>
+
+</resources>
